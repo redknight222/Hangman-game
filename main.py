@@ -31,9 +31,9 @@ You survived!''')
             print('Please enter a lowercase English letter')
             continue
         else:
-            for a in range(len(base_word)):
-                if base_word[a] == letter:
-                    user_word[a] = letter
+            for word_index in range(len(base_word)):
+                if base_word[word_index] == letter:
+                    user_word[word_index] = letter
                     repeats.add(letter)
                 elif letter not in base_word:
                     i += 1
